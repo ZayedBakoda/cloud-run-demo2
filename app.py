@@ -12,7 +12,7 @@ storage_client = storage.Client()
 
 @app.route("/", methods=["GET"])
 def create_file_and_upload_to_gcp_bucket():
-    file_name = "my-file-7.txt"
+    file_name = "my-file.txt"
 
     file_content = datetime.now().strftime('%m-%d-%y %H:%M:%S')
     with open(f"./{file_name}", "w") as file:
